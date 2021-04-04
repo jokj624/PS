@@ -23,4 +23,4 @@ int main(){
 	}while(next_permutation(v.begin(),v.end()));
 	cout << ans;
 	return 0;
-}
+}  
