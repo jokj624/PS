@@ -30,8 +30,8 @@ int main(){
 	}
 	scanf("%d %d %d", &S, &X, &Y);
 	int s = 0;
+	sort(vec.begin(), vec.end(), cmp); //처음 들어온 바이러스 낮은 번호부터 오도록 정렬
 	while(s < S){  // 초가 아직 S에 도달하지 못했다면
-		sort(vec.begin(), vec.end(), cmp);  //1초 증가할 때마다 새로 sort 
 		int len = vec.size();
 		for(int j=0; j<len; j++){
 			Virus v = vec[j];
