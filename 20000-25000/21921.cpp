@@ -1,21 +1,20 @@
+//AC
+//BOJ 21921 블로그 
 #include <iostream>
 #include <vector>
-#include <deque>
 using namespace std;
 typedef long long ll;
-int blog[250001];
 ll sum[250001];
 int main(){
     int N, X, num;
     cin >> N >> X;
-    
     for(int i=0; i<N; i++){
-        scanf("%d", &blog[i]);
+        scanf("%d", &num);
         if(i==0)  {
-            sum[i] = blog[i];
+            sum[i] = num;
             continue;
         }
-        sum[i] = sum[i-1] + blog[i];
+        sum[i] = sum[i-1] + num;
     }
     ll maxSum = sum[X-1];
     int cnt = 1;
