@@ -4,7 +4,7 @@
 #include <deque>
 #include <string>
 using namespace std;
-int num[500001] = {0};
+int num[500001];
 deque<int> dq;
 int main(){
 	int n, k, idx;
