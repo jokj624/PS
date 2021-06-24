@@ -51,6 +51,6 @@ int main(){
             pq.push({next, min(prev, L[next]), dist});
         }
     }
-
+ 
     cout << ans;
 }
